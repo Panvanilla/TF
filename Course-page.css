@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+.Avatar-top {
+      width: 101%;
+      height: 200px;
+  }
+.Avatar-left {
+    position: absolute;
+    object-fit: contain;
+
+}
+i.icon, i.icons {
+  font-size: 0.9em;
+}
+.Avatar-left1 {
+    position: absolute;
+    object-fit: contain;
+}
+.top-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+a {
+    color: white;
+}
+.button-back {
+    position: absolute;
+    bottom: 70%;
+    color: white;
+}
+.Course-title {
+    position: absolute;
+    bottom: 47.5%;
+    color: white;
+    font-size: 36px;
+}
+.container-course {
+    position: absolute;
+    bottom: 10%;
+    background-color: white;
+    color: #2F54EB;
+    align-items: center;
+    font-weight: 600;
+    height: 40px;
+    width: 125px;
+    border-radius: 5px;
+    padding: 10px 8px;
+    border: 1px solid #DDE1E6;
+    box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.container-course-ES {
+  width: 160px;
+  position: absolute;
+  bottom: 10%;
+  background-color: white;
+  color: #2F54EB;
+  align-items: center;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 8px;
+  border: 1px solid #DDE1E6;
+  box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 4% 4%;
+    padding-bottom: 0px;
+}
+.leftside-container {
+    width: 40%;
+}
+.title-icon-level {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+.first-icon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+}
+.second-icon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+}
+.third-icon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+}
+.fourth-icon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+}
+.fifth-icon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+}
+.title-icon {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1%;
+    font-family: 'Inter';
+}
+
+.text-icon {
+    color: #757575;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;  
+    line-height: 35px;
+    font-family: 'Inter';
+}
+.rightside-container {
+    width: 60%;
+}
+
+.text-description {
+    /* padding: 95px 39px; */
+    padding-left: 39px;
+    font-family: 'Inter';
+}
+.title-overview {
+  font-size: 24px;
+  font-family: 'Inter';
+  font-weight: 600;
+  margin-bottom: 0.6%;
+}
+
+.description {
+  font-size: 22px;
+  align-items: center;
+  letter-spacing: 0.2px;
+  line-height: 35px;
+  color: #757575;
+}
+.content {
+    position: relative;
+    color: #F5F7F7;
+    font-weight: 80;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+  }
+  .request-button {
+      position: absolute;
+      cursor: pointer;
+      padding: 20px 20px;
+      font-size: 29px;
+      font-style: 'Inter';
+      border-radius: 6px;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgb(221, 225, 230);
+      background-color: rgb(56, 56, 238);
+      color: white;
+      margin-top: 70px;
+  }
+
+  .request-button:hover {
+    background-color: white;
+    color: rgb(56, 56, 238);
+  }
+  
+  .request-button:target {
+    background-color: white;
+    color: rgb(56, 56, 238);
+    border: 1px solid white;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  font-family: 'Raleway', sans-serif;
+  overflow: scroll;
+  }
+
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  font-family: 'Raleway', sans-serif;
+  }
+  
+  .popup h2 {
+    
+    margin-top: 0;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  font-family: 'Raleway', sans-serif;
+  }
+  .popup .close:hover {
+    color: #fff;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(56, 56, 238);
+  display: block;
+  transform: scale(1.2);
+  cursor: pointer;
+  }
+  .popup .content-popup {
+    max-height: 70%;
+   
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+  }
+  select {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+   
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color: #333;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   border-radius: 0;
+   line-height: 22px;
+  
+   padding: 13px 13px 13px 54px;
+   margin-bottom: 10px;
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 3px solid rgba(0, 0, 0, 0);
+   cursor: pointer;
+  }
+  
+  .content-popup {
+    position: relative;
+    color: #F5F7F7;
+    font-weight: 80;
+    letter-spacing: 0.4px;
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+
+  @media screen and (max-width: 1000px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+  html {}
+  
+  #feedback-page {
+    text-align: center;
+  }
+  
+  #form-main {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+  }
+  
+  #form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -225px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+  }
+  
+  .feedback-input {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+
+  select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+  }
+  .feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid rgb(56, 56, 238);
+    color: #333;;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+  }
+  
+  .focused {
+    color: #333;;
+    border: 3px solid rgb(56, 56, 238);;
+  }
+  
+  
+  
+  /* Icons ---------------------------------- */
+  
+  #name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #name:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #email:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  #Course {
+  
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #Course:focus {
+    cursor: pointer;
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  #Bandwith {
+    background-image: url(http://siteassets.pagecloud.com/businesslawadvice/images/terminal-ID-2e4a6e23-74dd-4190-da8c-2241d033981f.svg?nocache=97860f14-1ae3-4d78-f1f6-6c5ec186ca64);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #Bandwith:focus {
+    background-image: url(http://siteassets.pagecloud.com/businesslawadvice/images/terminal-ID-2e4a6e23-74dd-4190-da8c-2241d033981f.svg?nocache=97860f14-1ae3-4d78-f1f6-6c5ec186ca64);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #Comments {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  textarea {
+    width: 300px;
+    height: 150px;
+    line-height: 150%;
+    resize: horizontal;
+  }
+  input:hover,
+  textarea:hover,
+  select:hover,
+  select:focus
+  input:focus,
+  textarea:focus {
+    background-color: white;
+  }
+  #button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+    border: rgb(56, 56, 238) solid 4px;
+    cursor: pointer;
+    background-color: rgb(56, 56, 238);
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+  }
+  #button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(56, 56, 238);
+  }
+  .submit:hover {
+    color: rgb(56, 56, 238);
+  }
+  .ease {
+    width: 0px;
+    height: 74px;
+    background-color: #A30026;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+  }
+  .submit:hover .ease {
+    width: 100%;
+    background-color: white;
+  }
+  @media only screen and (max-width: 580px) {
+    #form-div {
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  }
+  
+  #icon3,
+  #icon4,
+  #icon5,
+  #icon6 {
+    color: rgb(56, 56, 238);
+  }
+
+  .bullets {
+    padding-left: 10%;
+  }
