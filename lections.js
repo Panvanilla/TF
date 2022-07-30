@@ -1,0 +1,145 @@
+const LECTIONS = [
+    {
+        newcard: 'compressed_tf/Systems Design-min.png',
+        icon: '',
+        type: '(System Design)',
+        about: 'system',
+        name: 'BDC_TM_G.A.0-004_Life-support_System_Mixer&TempControlSystem_Rev_A',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '16 hours',
+        level: 'level 2',
+        link: 'https://my.boeing.com'    
+    },
+    {
+        newcard: 'compressed_tf/BMT-min.png',
+        icon: '',
+        type: '(BMT  6F  4B)',
+        about: 'bmt',
+        name: 'SOJT BMT Bushings and Bearings training',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '120 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Микроэкономика'    
+    },
+    {
+        newcard: 'compressed_tf/CMA-min.png',
+        icon: '',
+        type: '(CMA)',
+        about: 'cma',
+        name: 'CMA',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '35 hours',
+        level: 'level 3',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Научное познание'    
+    },
+    {
+        newcard: 'compressed_tf/Payloads-min.png',
+        icon: '',
+        type: '(Payloads DE)',
+        about: 'payloads',
+        name: 'Payloads DE',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '40 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Микроэкономика'    
+    },
+    {
+        newcard: 'compressed_tf/Flammability-min.png',
+        icon: '',
+        type: '(Flammability)',
+        about: 'flammability',
+        name: 'Flammability',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '85 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Научное познание'    
+    },
+    {
+        newcard: 'compressed_tf/Production Engineering-min.png',
+        icon: '',
+        type: '(Pr Engineering)',
+        about: 'Production',
+        name: 'Production Engineering',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '150 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Микроэкономика'    
+    },
+    {
+        newcard: 'compressed_tf/Service Engineers-min.png',
+        icon: '',
+        type: '(Sr Engineers)',
+        about: 'service',
+        name: 'Service Engineers',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '37 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Научное познание'    
+    },
+    {
+        newcard: 'compressed_tf/Stress Analysis-min.png',
+        icon: '',
+        type: '(Stress Analisis)',
+        about: 'stress',
+        name: 'Stress Analisis',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '74 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Микроэкономика'    
+    },
+    {
+        newcard: 'compressed_tf/Engineering Support-min.png',
+        icon: '',
+        type: '(Eng Support)',
+        about: 'support',
+        name: 'Engineering Support',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '113 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Научное познание'    
+    },
+    {
+        newcard: 'compressed_tf/Structures-min.png',
+        icon: '',
+        type: '(Structures)',
+        about: 'structures',
+        name: 'Structures',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '58 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Микроэкономика'    
+    },
+    {
+        newcard: 'compressed_tf/Systems Design-min.png',
+        icon: '',
+        type: '(System Design)',
+        about: 'system',
+        name: 'BDC_TM_G.A.0-004_Life-support_System_Mixer&TempControlSystem_Rev_A',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '16 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Научное познание'    
+    },
+    {
+        newcard: 'compressed_tf/Product Support-min.png',
+        icon: '',
+        type: '(Prdct Support)',
+        about: 'product',
+        name: 'Product Support',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '129 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Микроэкономика'    
+    },
+    {
+        newcard: 'compressed_tf/Systems Design-min.png',
+        icon: '',
+        type: '(System Design)',
+        about: 'system',
+        name: 'BDC_TM_G.A.0-004_Life-support_System_Mixer&TempControlSystem_Rev_A',
+        lector: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget donec aliquam ut eget. Tempus tristique quisque pharetra sit amet.',
+        hours: '16 hours',
+        level: 'level 2',
+        link: 'file://///mp-mow-07.mow.boeing.ru/Recorded_lectures/1_BDCU Lectures/2.Hard Skills/Научное познание'    
+    },
+]
